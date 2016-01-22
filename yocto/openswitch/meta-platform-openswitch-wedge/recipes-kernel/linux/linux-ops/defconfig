@@ -1314,8 +1314,10 @@ CONFIG_I2C_ALGOBIT=y
 # CONFIG_I2C_AMD756 is not set
 # CONFIG_I2C_AMD8111 is not set
 
-# TODO: "i801_smbus 0000:00:1f.3: Failed to allocate irq 255" Kernel error log on booting...
-#CONFIG_I2C_I801=y
+# even error message is shown, it's not error. I guess.
+# this option is used to recognize i2c device(avoton)
+# "i801_smbus 0000:00:1f.3: Failed to allocate irq 255" Kernel error log on booting..
+CONFIG_I2C_I801=y
 # CONFIG_I2C_ISCH is not set
 
 # TODO: CONFIG_I2C_ISMT is for Intel SMbus. need really?
